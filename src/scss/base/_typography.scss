@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+html {
+    font-family: $ft-barlow;
+    font-weight: 600;
+    color: $clr-gray-blue-900;
+    line-height: 1.5;
+}
+
+.title {
+    font-family: $ft-fraunces;
+    font-weight: 900;
+}

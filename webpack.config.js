@@ -41,6 +41,24 @@ module.exports = {
                     "sass-loader",
                 ],
             },
+            {
+                test: /\.css$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader",
+                        options: { importLoaders: 1 },
+                    },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: {
+                                plugins: [["autoprefixer", {}]],
+                            },
+                        },
+                    },
+                ],
+            },
             // needed for dev-serv to hot reload on public/index.html change
             {
                 test: /\.html$/,
