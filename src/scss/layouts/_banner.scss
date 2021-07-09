@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.banner {
+    text-align: center;
+    padding: $pad-sm;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__content {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: 0.9rem;
+    }
+
+    &--graphic {
+        background-image: url("../images/mobile/image-graphic-design.jpg");
+        color: $clr-dark-cyan-900;
+    }
+
+    &--photography {
+        background-image: url("../images/mobile/image-photography.jpg");
+        color: $clr-dark-blue;
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    .banners {
+        display: flex;
+    }
+
+    .banner {
+        width: 50%;
+
+        &--graphic {
+            background-image: url("../images/desktop/image-graphic-design.jpg");
+            color: $clr-dark-cyan-900;
+        }
+
+        &--photography {
+            background-image: url("../images/desktop/image-photography.jpg");
+            color: $clr-dark-blue;
+        }
+    }
+}
