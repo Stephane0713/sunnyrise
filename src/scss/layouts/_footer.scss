@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+.footer {
+    text-align: center;
+    padding: $pad-sm;
+    background-color: $clr-light-cyan;
+
+    &__link,
+    &__title,
+    &__icon {
+        display: block;
+        color: $clr-dark-cyan-700;
+        text-decoration: none;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+    }
+
+    &__nav,
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    &__nav {
+        max-width: 300px;
+        margin-bottom: 5rem;
+    }
+
+    &__icons {
+        max-width: 180px;
+        margin-bottom: 2rem;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
