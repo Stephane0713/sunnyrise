@@ -3,11 +3,12 @@
 html {
     font-family: $ft-barlow;
     font-weight: 600;
-    color: $clr-gray-blue-900;
     line-height: 1.5;
+    color: $clr-gray-blue-700;
 }
 
 .title {
+    color: $clr-gray-blue-900;
     font-family: $ft-fraunces;
     font-weight: 900;
 }

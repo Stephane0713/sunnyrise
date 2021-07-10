@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+
+    &__content {
+        margin: auto;
+    }
+
+    &__title {
+        color: $clr-gray-blue-300;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin: $pad-sm 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+.card {
+    text-align: center;
+    padding: 1.5rem;
+
+    &__img {
+        border-radius: 50%;
+        margin: 1rem 0;
+        height: 80px;
+    }
+
+    &__name {
+        font-family: $ft-fraunces;
+        font-weight: 900;
+        color: $clr-gray-blue-900;
+        margin: 1.5rem 0 0.5rem;
+    }
+
+    &__job {
+        font-size: 0.8rem;
+        color: $clr-gray-blue-500;
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        &__text {
+            margin: 3rem 0;
+        }
+    }
+}
