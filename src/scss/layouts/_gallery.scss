@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+.gallery {
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        width: 50%;
+        min-height: 180px;
+        background-size: cover;
+        background-position: center;
+
+        &--milk {
+            background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+        }
+        &--orange {
+            background-image: url("../images/mobile/image-gallery-orange.jpg");
+        }
+        &--cone {
+            background-image: url("../images/mobile/image-gallery-cone.jpg");
+        }
+        &--sugar {
+            background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+        }
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    .gallery {
+        &__images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__img {
+            width: 25%;
+            min-height: 500px;
+
+            &--milk {
+                background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+            }
+            &--orange {
+                background-image: url("../images/desktop/image-gallery-orange.jpg");
+            }
+            &--cone {
+                background-image: url("../images/desktop/image-gallery-cone.jpg");
+            }
+            &--sugar {
+                background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+            }
+        }
+    }
+}
