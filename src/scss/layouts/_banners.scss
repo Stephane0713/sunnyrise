@@ -11,13 +11,13 @@
     justify-content: flex-end;
 
     &__content {
-        max-width: 300px;
+        max-width: 350px;
         margin: 0 auto;
     }
 
-    &__text {
-        font-size: 0.9rem;
-    }
+    // &__text {
+    //     font-size: 0.9rem;
+    // }
 
     &--graphic {
         background-image: url("../images/mobile/image-graphic-design.jpg");

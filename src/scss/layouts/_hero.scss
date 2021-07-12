@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.hero {
+    padding-top: 6rem;
+    min-height: 520px;
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url("../images/mobile/image-header.jpg");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: $clr-white;
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        margin-bottom: 3rem;
+    }
+
+    &__arrow {
+        max-width: 2rem;
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    .hero {
+        background-image: url("../images/desktop/image-header.jpg");
+        min-height: 700px;
+
+        &__title {
+            margin-top: 60px;
+            font-size: 3rem;
+        }
+    }
+}

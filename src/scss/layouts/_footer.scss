@@ -13,6 +13,14 @@
         text-decoration: none;
     }
 
+    &__link:hover {
+        color: $clr-white;
+    }
+
+    &__icon:hover .footer__svg {
+        fill: $clr-white;
+    }
+
     &__title {
         font-size: 2rem;
         font-weight: 900;

@@ -20,10 +20,6 @@
         font-size: 2rem;
     }
 
-    &__text {
-        font-size: 1.125rem;
-    }
-
     &__learn {
         text-decoration: none;
         font-family: $ft-fraunces;
@@ -37,12 +33,16 @@
             content: "";
             position: absolute;
             bottom: -0.25rem;
-            left: -10%;
-            width: 120%;
+            left: -5%;
+            width: 110%;
             height: 0.5rem;
             z-index: -1;
             border-radius: 9999px;
             opacity: 0.3;
+        }
+
+        &:hover::after {
+            opacity: 1;
         }
     }
 }
