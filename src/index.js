@@ -5,3 +5,12 @@ import "../public/index.html";
 import "normalize.css";
 
 import "./scss/style.scss";
+
+// Menu
+
+const menuBtn = document.querySelector("#menu-btn");
+const headerNav = document.querySelector(".header__nav");
+
+menuBtn.addEventListener("click", () => {
+    headerNav.classList.toggle("active");
+});

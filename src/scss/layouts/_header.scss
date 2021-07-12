@@ -66,11 +66,6 @@
             text-transform: uppercase;
             padding: 1rem 1.5rem;
             border-radius: 999px;
-
-            &:hover {
-                background-color: rgba($clr-white, 0.3);
-                color: $clr-white;
-            }
         }
     }
 }
