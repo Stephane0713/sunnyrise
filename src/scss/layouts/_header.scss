@@ -1,10 +1,24 @@
 @use "../abstracts" as *;
 
+@keyframes pop-in {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .header {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 999;
+    background-color: $clr-header-bg;
 
     &__top-bar {
         display: flex;
@@ -25,10 +39,10 @@
         display: none;
         position: absolute;
         top: 8rem;
-        left: 0;
+        left: 1rem;
+        right: 1rem;
         background-color: $clr-white;
         text-align: center;
-        width: 100%;
         padding: 1rem;
 
         &::after {
@@ -42,6 +56,7 @@
 
         &.active {
             display: block;
+            animation: 0.1s ease 0s forwards pop-in;
         }
     }
 
