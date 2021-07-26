@@ -6,4 +6,4 @@ The goal of this project was to test my frontend abilities by integrating the mo
 
 Even though this isn't a big project, i decided to use webpack to get a little more familiar with it. I'm also using sass and tried to organized this project in a pattern inspired by this documentation : https://sass-guidelin.es/.
 
-The website is hosted on Github Pages : https://stephane0713.github.io/sunnyrise/
+The website is hosted on Github Pages : https://musing-noyce-fdc060.netlify.app/
