@@ -29,7 +29,7 @@
 @media screen and (min-width: $bp-lg) {
     .hero {
         background-image: url("../images/desktop/image-header.jpg");
-        min-height: 700px;
+        min-height: 100vh;
 
         &__title {
             margin-top: 60px;
